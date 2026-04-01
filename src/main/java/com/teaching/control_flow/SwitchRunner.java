@@ -1,4 +1,4 @@
-package com.teaching.controlflow;
+package com.teaching.control_flow;
 
 /**
  * Demonstrates traditional switch statements and modern switch expressions (Java 14+).

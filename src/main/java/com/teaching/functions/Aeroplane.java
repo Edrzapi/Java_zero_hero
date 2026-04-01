@@ -1,4 +1,4 @@
-package com.teaching.methods_and_classes;
+package com.teaching.functions;
 
 /**
  * Demonstrates constructor chaining using this(...).

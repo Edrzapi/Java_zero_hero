@@ -1,4 +1,4 @@
-package com.teaching.networking;
+package com.teaching.apis;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.net.Socket;
  *
  * HOW TO RUN:
  *   Start SocketServerRunner first (Terminal 1), then run this (Terminal 2):
- *   mvn exec:java -Dexec.mainClass="com.teaching.networking.SocketClientRunner"
+ *   mvn exec:java -Dexec.mainClass="com.teaching.apis.SocketClientRunner"
  *
  * Key concepts:
  *   Socket(host, port) — connects to the server; throws ConnectException if nothing is listening

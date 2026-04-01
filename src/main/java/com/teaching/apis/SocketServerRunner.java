@@ -1,4 +1,4 @@
-package com.teaching.networking;
+package com.teaching.apis;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,8 +11,8 @@ import java.net.Socket;
  * Minimal TCP echo server — accepts one client, echoes every line back, then shuts down.
  *
  * HOW TO RUN (requires two terminals):
- *   Terminal 1: mvn exec:java -Dexec.mainClass="com.teaching.networking.SocketServerRunner"
- *   Terminal 2: mvn exec:java -Dexec.mainClass="com.teaching.networking.SocketClientRunner"
+ *   Terminal 1: mvn exec:java -Dexec.mainClass="com.teaching.apis.SocketServerRunner"
+ *   Terminal 2: mvn exec:java -Dexec.mainClass="com.teaching.apis.SocketClientRunner"
  *
  * For a self-contained single-JVM demo (server on a background thread), see the
  * concurrency module — that pattern is shown in ThreadRunner after Executors are introduced.

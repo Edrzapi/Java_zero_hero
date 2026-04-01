@@ -1,4 +1,4 @@
-package com.teaching.controlflow;
+package com.teaching.control_flow;
 
 /**
  * Demonstrates if/else-if chains, logical operators, and ternary expressions.

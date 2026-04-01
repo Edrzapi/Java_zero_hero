@@ -1,4 +1,4 @@
-package com.teaching.methods_and_classes;
+package com.teaching.functions;
 
 import java.util.Scanner;
 

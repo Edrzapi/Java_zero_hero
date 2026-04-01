@@ -1,4 +1,4 @@
-package com.teaching.networking;
+package com.teaching.apis;
 
 import java.io.IOException;
 import java.net.URI;
@@ -14,7 +14,7 @@ import java.time.Duration;
  * Requires internet access. Uses JSONPlaceholder — a free, stable REST testing API.
  *
  * HOW TO RUN:
- *   mvn exec:java -Dexec.mainClass="com.teaching.networking.HttpClientRunner"
+ *   mvn exec:java -Dexec.mainClass="com.teaching.apis.HttpClientRunner"
  *
  * Key concepts:
  *   HttpClient  — immutable, thread-safe; build once, reuse for many requests

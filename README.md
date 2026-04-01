@@ -35,14 +35,15 @@ src/
 ├── main/
 │   ├── java/com/teaching/
 │   │   ├── basics/               # Primitives, arrays, strings, enums
-│   │   ├── controlflow/          # Conditionals, switch, loops
-│   │   ├── methods_and_classes/  # Methods, scope, constructors
+│   │   ├── control_flow/         # Conditionals, switch
+│   │   ├── iteration/            # Loops, enhanced-for, labelled break
+│   │   ├── functions/            # Methods, scope, constructors
 │   │   ├── oop/                  # Inheritance, polymorphism
 │   │   ├── collections/          # List, Set, Map, Queue, generics
 │   │   ├── exceptions/           # Checked/unchecked, custom hierarchy
 │   │   ├── io/                   # NIO2 file handling
 │   │   ├── datetime/             # Modern date/time API
-│   │   ├── networking/           # TCP sockets, HttpClient
+│   │   ├── apis/                 # TCP sockets, HttpClient
 │   │   ├── concurrency/          # Threads, executors, race conditions
 │   │   ├── databases/            # JDBC with H2 and MySQL
 │   │   └── testing/              # JUnit 5
@@ -89,15 +90,15 @@ mvn test
 
 - **controlflow** — `if`/`else-if`, traditional switch (fall-through risk), modern switch expressions (Java 14+, arrow syntax, multi-label cases), `for`/`while`/`do-while`, enhanced for, 2D iteration, labelled `break`.
   ```bash
-  mvn exec:java -Dexec.mainClass="com.teaching.controlflow.ConditionalsRunner"
-  mvn exec:java -Dexec.mainClass="com.teaching.controlflow.SwitchRunner"
-  mvn exec:java -Dexec.mainClass="com.teaching.controlflow.LoopsRunner"
-  mvn exec:java -Dexec.mainClass="com.teaching.controlflow.GradingRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.control_flow.ConditionalsRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.control_flow.SwitchRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.control_flow.LoopsRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.control_flow.GradingRunner"
   ```
 
-- **methods\_and\_classes** — Return types, method overloading, pass-by-value for primitives vs arrays, variable scope, constructor chaining with `this(...)`.
+- **functions** — Return types, method overloading, pass-by-value for primitives vs arrays, variable scope, constructor chaining with `this(...)`.
   ```bash
-  mvn exec:java -Dexec.mainClass="com.teaching.methods_and_classes.MethodRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.functions.MethodRunner"
   ```
 
 ### Object-Oriented Programming
@@ -134,19 +135,19 @@ mvn test
   mvn exec:java -Dexec.mainClass="com.teaching.datetime.DateTimeRunner"
   ```
 
-### Networking
+### APIs and Networking
 
-- **networking** — TCP `ServerSocket`/`Socket` with `PrintWriter(autoFlush=true)`. `HttpClient` (Java 11+): synchronous GET, response metadata, reusing the client across multiple requests. No extra dependencies — `java.net.http` is part of the JDK.
+- **apis** — TCP `ServerSocket`/`Socket` with `PrintWriter(autoFlush=true)`. `HttpClient` (Java 11+): synchronous GET, response metadata, reusing the client across multiple requests. No extra dependencies — `java.net.http` is part of the JDK.
 
   ```bash
   # HTTP (no setup required)
-  mvn exec:java -Dexec.mainClass="com.teaching.networking.HttpClientRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.apis.HttpClientRunner"
 
   # TCP sockets — two separate terminals
   # Terminal 1:
-  mvn exec:java -Dexec.mainClass="com.teaching.networking.SocketServerRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.apis.SocketServerRunner"
   # Terminal 2 (while server is running):
-  mvn exec:java -Dexec.mainClass="com.teaching.networking.SocketClientRunner"
+  mvn exec:java -Dexec.mainClass="com.teaching.apis.SocketClientRunner"
   ```
 
 ### Concurrency
@@ -210,4 +211,7 @@ No Spring. No Hibernate. No Lombok. No mocking frameworks.
 
 ## What's Next?
 
-This course covers core Java and the standard library. For Python fundamentals in the same structured style, see [Python Zero to Hero](https://github.com/Edrzapi/Python_zero_hero).
+This course covers core Java and the standard library. For the same structured approach in other languages, see the companion repositories:
+
+- [Python Zero to Hero](https://github.com/Edrzapi/Python_zero_hero)
+- [C# Zero to Hero](https://github.com/Edrzapi/CS_zero_hero)

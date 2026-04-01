@@ -1,4 +1,4 @@
-package com.teaching.methods_and_classes;
+package com.teaching.functions;
 
 /**
  * A simple class demonstrating instance fields, a constructor, and overloaded getters.
